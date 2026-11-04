@@ -5,7 +5,7 @@ WINDOW 0 -43 -84 Top 2
 WINDOW 3 42 -1 VBottom 2
 SYMATTR Prefix X
 SYMATTR Value JFEx140
-SYMATTR ModelFile C:\Projects\LNA\Simulation\LTspice\jfex140.lib
+SYMATTR ModelFile jfex140.lib
 PIN -48 -32 LEFT 8
 PINATTR PinName D
 PINATTR SpiceOrder 1

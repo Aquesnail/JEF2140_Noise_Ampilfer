@@ -10,7 +10,7 @@ WINDOW 0 40 -16 Left 2
 WINDOW 3 40 16 Left 2
 SYMATTR Prefix X
 SYMATTR Value TPH2501_simplify
-SYMATTR ModelFile C:\Projects\LNA\Simulation\LTspice\TPH2501.mdl
+SYMATTR ModelFile TPH2501.mdl
 PIN -32 -16 NONE 0
 PINATTR PinName IN+
 PINATTR SpiceOrder 1

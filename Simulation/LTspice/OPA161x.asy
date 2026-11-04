@@ -4,7 +4,7 @@ RECTANGLE Normal -64 -56 64 56
 WINDOW 0 0 -56 Bottom 2
 SYMATTR Prefix X
 SYMATTR Value OPA161x
-SYMATTR ModelFile C:\Projects\LNA\Simulation\LTspice\OPA161x.LIB
+SYMATTR ModelFile OPA161x.LIB
 WINDOW 3 0 56 Top 2
 PIN -64 -16 LEFT 8
 PINATTR PinName IN+

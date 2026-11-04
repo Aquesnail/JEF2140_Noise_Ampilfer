@@ -11,7 +11,7 @@ WINDOW 0 56 32 Left 2
 WINDOW 3 56 68 Left 2
 SYMATTR Prefix X
 SYMATTR Value BCM847DS
-SYMATTR ModelFile C:\Projects\LNA\Simulation\LTspice\BCM847.lib
+SYMATTR ModelFile BCM847.lib
 PIN 64 0 NONE 0
 PINATTR PinName C
 PINATTR SpiceOrder 1
