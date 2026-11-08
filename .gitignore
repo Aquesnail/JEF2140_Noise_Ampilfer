@@ -21,3 +21,14 @@ _autosave-*
 *.bak
 *.kicad_sch-bak
 *.kicad_pcb-bak
+
+# ---------------------------------------------------------------------------
+# LTspice
+# ---------------------------------------------------------------------------
+# Simulation outputs and waveform/plot state; only the .asc schematic and the
+# device models (.lib/.asy/.mdl/.txt) are tracked.
+
+*.raw
+*.op.raw
+*.log
+*.plt
