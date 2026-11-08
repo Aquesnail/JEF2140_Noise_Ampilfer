@@ -1,0 +1,23 @@
+# ---------------------------------------------------------------------------
+# KiCad
+# ---------------------------------------------------------------------------
+
+# KiCad Local History: per-machine snapshots, stored in a nested git repo
+.history/
+
+# Per-user local project settings (window layout, active layers, visibility)
+*.kicad_prl
+
+# Lock file created while a project is open in KiCad
+~*.lck
+
+# Footprint / symbol info caches
+fp-info-cache
+fp-info-cache.json
+
+# Automatic backups and autosave files
+*-backups/
+_autosave-*
+*.bak
+*.kicad_sch-bak
+*.kicad_pcb-bak
