@@ -1,0 +1,34 @@
+--- original_blueprint.asc
++++ blueprint_bias_reload_OP.asc
+@@ -304,7 +304,7 @@
+ WINDOW 3 -408 138 Left 2
+ WINDOW 123 -136 102 Left 2
+ WINDOW 39 0 0 Left 0
+-SYMATTR Value PULSE(0 0.001V 8ms 1ns 1ns 1us 2us)
++SYMATTR Value DC 0
+ SYMATTR Value2 AC 1
+ SYMATTR InstName V2
+ SYMBOL cap -1552 592 R90
+@@ -479,7 +479,7 @@
+ WINDOW 123 0 0 Left 0
+ WINDOW 39 0 0 Left 0
+ SYMATTR InstName V3
+-SYMATTR Value 5V
++SYMATTR Value 10V
+ SYMBOL voltage -2224 96 R180
+ WINDOW 123 0 0 Left 0
+ WINDOW 39 0 0 Left 0
+@@ -515,8 +515,12 @@
+ TEXT -944 -512 Left 2 ;.op
+ TEXT -944 -576 Left 2 ;.loadbias virtual_native_two_opa_bias.txt
+ TEXT -1048 -360 Left 2 ;.model RELAY SW(Ron=10m Roff=100Meg Vt=0.5)
+-TEXT -968 -840 Left 2 !.noise V(OUT3) V2 dec 100 0.1 100MEG
++TEXT -968 -840 Left 2 ;.noise V(OUT3) V2 dec 100 0.1 100MEG
+ TEXT -944 -544 Left 2 ;.loadbias parallel_native_bias.txt
+ TEXT -280 1184 Left 2 ;.ac dec 100 10m 100Meg
+ TEXT -288 1144 Left 2 ;.tran 0 100s 0
+ TEXT -280 1104 Left 2 ;.op
++TEXT -968 -936 Left 2 !.op
++TEXT -968 -984 Left 2 !.loadbias blueprint_native_bias.txt
++TEXT -968 -1032 Left 2 !.savebias blueprint_reloaded_bias.txt internal
++TEXT -968 -1080 Left 2 !.options solver=alt numdgt=15

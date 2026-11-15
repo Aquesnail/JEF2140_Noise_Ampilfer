@@ -1,0 +1,16 @@
+{
+  "original_blueprint_sha256": "79312cec1d47f45bc2a8d73d787fefcc415d6f0c58fb2186a914c003a1102fae",
+  "original_blueprint_unchanged": true,
+  "native_bias_nodes": 578,
+  "electrical_changes": {
+    "V2": {
+      "original": "V2 VIN VGND PULSE(0 0.001V 8ms 1ns 1ns 1us 2us) AC 1",
+      "handoff": "V2 VIN VGND DC 0 AC 1"
+    },
+    "V3": {
+      "original": "V3 VCC_AMP1 0 5V",
+      "handoff": "V3 VCC_AMP1 0 10V"
+    }
+  },
+  "all_other_components_and_connections_identical": true
+}

@@ -1,0 +1,23 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal -48 -56 48 56
+WINDOW 0 -48 -56 Bottom 2
+WINDOW 3 42 -2 VBottom 2
+SYMATTR Value JFE150
+SYMATTR Prefix X
+SYMATTR ModelFile C:\Projects\JEF2140_Noise_Ampilfer\Simulation\LTspice\jfe150.lib
+PIN -48 -32 LEFT 8
+PINATTR PinName D
+PINATTR SpiceOrder 1
+PIN -48 0 LEFT 8
+PINATTR PinName G
+PINATTR SpiceOrder 2
+PIN -48 32 LEFT 8
+PINATTR PinName S
+PINATTR SpiceOrder 3
+PIN 0 -64 VRIGHT 8
+PINATTR PinName VCH
+PINATTR SpiceOrder 4
+PIN 0 64 VLEFT 8
+PINATTR PinName VCL
+PINATTR SpiceOrder 5

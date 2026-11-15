@@ -32,3 +32,4 @@ _autosave-*
 *.op.raw
 *.log
 *.plt
+*.zip
