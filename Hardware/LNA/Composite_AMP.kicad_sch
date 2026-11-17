@@ -5097,7 +5097,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "lcsc_footprints:C58012_SOT-23-3_L2_9-W1_3-P1_90-LS2_4-BR"
 			(at 105.41 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -5913,7 +5913,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "lcsc_footprints:C58012_SOT-23-3_L2_9-W1_3-P1_90-LS2_4-BR"
 			(at 95.25 58.42 0)
 			(hide yes)
 			(show_name no)

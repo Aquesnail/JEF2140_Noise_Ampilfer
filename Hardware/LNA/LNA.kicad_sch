@@ -1741,7 +1741,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Relay_SMD:Relay_DPDT_Omron_G6K-2F-Y"
 			(at 160.02 48.26 0)
 			(hide yes)
 			(show_name no)
