@@ -5,7 +5,7 @@
 	(uuid "77d584d5-3fbc-4572-a2ed-772d154a00be")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Amplifier_Operational:OPA843xDBV"
+		(symbol "Amplifier_Operational:OPA843xD"
 			(pin_names
 				(offset 0.127)
 			)
@@ -15,7 +15,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
-				(at -1.27 6.35 0)
+				(at 0 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -25,8 +25,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "OPA843xDBV"
-				(at -1.27 3.81 0)
+			(property "Value" "OPA843xD"
+				(at 0 3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -36,7 +36,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 				(at -2.54 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -49,7 +49,7 @@
 				)
 			)
 			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa843.pdf"
-				(at 0 5.08 0)
+				(at 3.81 3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -59,7 +59,7 @@
 					)
 				)
 			)
-			(property "Description" "800MHz, Wideband, Low Distortion, Medium Gain, Voltage-Feedback Operational Amplifier, SOT-23-5"
+			(property "Description" "800MHz, Wideband, Low Distortion, Medium Gain, Voltage-Feedback Operational Amplifier, SOIC-8"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -81,7 +81,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SOT?23*"
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -92,7 +92,7 @@
 					)
 				)
 			)
-			(symbol "OPA843xDBV_0_1"
+			(symbol "OPA843xD_0_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -105,48 +105,13 @@
 						(type background)
 					)
 				)
-				(pin power_in line
-					(at -2.54 -7.62 90)
-					(length 3.81)
-					(name "V-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 7.62 270)
-					(length 3.81)
-					(name "V+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
-			(symbol "OPA843xDBV_1_1"
-				(pin output line
-					(at 7.62 0 180)
+			(symbol "OPA843xD_1_1"
+				(pin no_connect line
+					(at -2.54 2.54 270)
 					(length 2.54)
-					(name ""
+					(hide yes)
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -154,6 +119,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -179,10 +162,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "-"
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -190,6 +173,203 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 2.54 270)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -337,186 +517,6 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:C_Polarized_US"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Polarized_US"
-				(at 0.635 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Polarized capacitor, US symbol"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "CP_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_Polarized_US_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 2.286) (xy -0.762 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.778) (xy -1.27 2.794)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.032 -1.27)
-					(mid 0 -0.5572)
-					(end 2.032 -1.27)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_Polarized_US_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 3.302)
 					(name ""
 						(effects
 							(font
@@ -1262,6 +1262,12 @@
 		)
 	)
 	(junction
+		(at 128.27 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "12fd9ea4-7812-4802-accd-684b277e3864")
+	)
+	(junction
 		(at 172.72 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1292,6 +1298,24 @@
 		(uuid "4abbad77-27cd-4711-83a1-6432461d387d")
 	)
 	(junction
+		(at 151.13 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "731493ca-e9e4-4440-84cd-7c26eee4c440")
+	)
+	(junction
+		(at 187.96 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "819aca19-ea5a-4c63-a935-0e8bd8b4aa9e")
+	)
+	(junction
+		(at 88.9 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "95d8a29e-b45e-44a3-a03c-6cda20444674")
+	)
+	(junction
 		(at 95.25 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1302,6 +1326,24 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a00fde8b-bda8-4fbf-a757-5a0425ccf290")
+	)
+	(junction
+		(at 95.25 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a3237e6e-5659-4846-a775-b636fda5af1a")
+	)
+	(junction
+		(at 144.78 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c21f4e16-d6c5-42c0-b5d4-75747ccc279c")
+	)
+	(junction
+		(at 81.28 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c3462ac5-2410-4c57-b4a8-817757bfd2b0")
 	)
 	(junction
 		(at 151.13 92.71)
@@ -1316,6 +1358,24 @@
 	(no_connect
 		(at 176.53 110.49)
 		(uuid "8d562cfe-9cc0-46e9-9da8-f248097d715e")
+	)
+	(no_connect
+		(at 100.33 73.66)
+		(uuid "a4e5642b-71f6-49dc-bf94-98930c80d699")
+	)
+	(no_connect
+		(at 156.21 71.12)
+		(uuid "ea4f03e1-c4fa-4dea-a812-b39d41837e09")
+	)
+	(wire
+		(pts
+			(xy 187.96 90.17) (xy 191.77 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "072d00e0-fcdf-44f1-96e9-ed29c4cc2ca7")
 	)
 	(wire
 		(pts
@@ -1339,17 +1399,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 92.71) (xy 138.43 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1afac04e-0cd7-408a-86d8-7a3f638fc3c2")
-	)
-	(wire
-		(pts
-			(xy 161.29 105.41) (xy 172.72 105.41)
+			(xy 167.64 105.41) (xy 172.72 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1376,6 +1426,26 @@
 			(type default)
 		)
 		(uuid "316713ad-90f1-4069-9fd2-c285bebd23c0")
+	)
+	(wire
+		(pts
+			(xy 151.13 74.93) (xy 151.13 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a4b342b-5470-4c68-806c-659447ee6189")
+	)
+	(wire
+		(pts
+			(xy 176.53 90.17) (xy 187.96 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f048cee-f1ca-4da8-8abf-410311c101ac")
 	)
 	(wire
 		(pts
@@ -1429,7 +1499,17 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 105.41) (xy 153.67 105.41)
+			(xy 144.78 71.12) (xy 144.78 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59045b68-ee01-47ec-836c-fef97ab86c7d")
+	)
+	(wire
+		(pts
+			(xy 151.13 105.41) (xy 160.02 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1449,16 +1529,6 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 90.17) (xy 191.77 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68205779-a553-4e54-9cd6-d197b13a0193")
-	)
-	(wire
-		(pts
 			(xy 105.41 107.95) (xy 116.84 107.95)
 		)
 		(stroke
@@ -1469,13 +1539,23 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 92.71) (xy 128.27 92.71)
+			(xy 120.65 92.71) (xy 139.7 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "7836158d-da99-4cef-923c-430655a97e3f")
+	)
+	(wire
+		(pts
+			(xy 95.25 77.47) (xy 95.25 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a5744ca-70bf-4108-8d2d-bf66bf6dbf30")
 	)
 	(wire
 		(pts
@@ -1489,6 +1569,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 83.82) (xy 88.9 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f0d236e-dbe6-4a7b-9bee-948705c762ab")
+	)
+	(wire
+		(pts
 			(xy 172.72 90.17) (xy 176.53 90.17)
 		)
 		(stroke
@@ -1499,17 +1589,47 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 92.71) (xy 151.13 92.71)
+			(xy 87.63 73.66) (xy 90.17 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a665560f-61e1-4e26-b287-1b8a1a2b9c47")
+		(uuid "baa89e2e-753b-401f-a72f-0966fa3607b7")
 	)
 	(wire
 		(pts
-			(xy 85.09 95.25) (xy 95.25 95.25)
+			(xy 81.28 83.82) (xy 81.28 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6b430ec-a6e9-4998-a910-ce9c15d1d6ee")
+	)
+	(wire
+		(pts
+			(xy 144.78 71.12) (xy 146.05 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb009095-9f94-48dc-8496-ce87c95fdcde")
+	)
+	(wire
+		(pts
+			(xy 144.78 87.63) (xy 151.13 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d294f538-f113-4520-96af-ff99ca3ab438")
+	)
+	(wire
+		(pts
+			(xy 69.85 95.25) (xy 95.25 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1529,6 +1649,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 90.17) (xy 81.28 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e20c61fd-7369-438b-bda4-b15a03602b16")
+	)
+	(wire
+		(pts
 			(xy 116.84 92.71) (xy 120.65 92.71)
 		)
 		(stroke
@@ -1536,6 +1666,26 @@
 			(type default)
 		)
 		(uuid "e635d79f-2da0-4a8a-90b2-00bfc880c1d2")
+	)
+	(wire
+		(pts
+			(xy 88.9 90.17) (xy 95.25 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6a4ec7d-7feb-42dd-9876-d5a7820915c7")
+	)
+	(wire
+		(pts
+			(xy 147.32 92.71) (xy 151.13 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7344796-5be2-4703-812a-cad07ba4164e")
 	)
 	(wire
 		(pts
@@ -1587,19 +1737,29 @@
 		)
 		(uuid "f71f0626-7892-4d35-8459-a23f185c0d18")
 	)
+	(wire
+		(pts
+			(xy 143.51 71.12) (xy 144.78 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd2b56af-df8e-408c-bc38-68022f2bfd49")
+	)
 	(global_label "5V_BIAS"
 		(shape input)
-		(at 95.25 82.55 90)
+		(at 87.63 73.66 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "2afaa34a-9749-486a-b392-1fedc3c34547")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 95.25 72.1262 90)
+			(at 77.2062 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1607,23 +1767,47 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
+			)
+		)
+	)
+	(global_label "3V_BIAS"
+		(shape input)
+		(at 76.2 90.17 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a6dec002-249d-49a4-898c-a1dc4ee0f9cc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 65.7762 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
 	(global_label "5V_BIAS"
 		(shape input)
-		(at 151.13 80.01 90)
+		(at 143.51 71.12 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "f73dd031-87d8-45e7-8d61-aeb673da88ae")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 151.13 69.5862 90)
+			(at 133.0862 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1631,13 +1815,13 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 	)
 	(hierarchical_label "IN"
 		(shape input)
-		(at 85.09 95.25 180)
+		(at 69.85 95.25 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1656,6 +1840,87 @@
 			(justify left)
 		)
 		(uuid "dad82637-0e09-4845-b069-37633edc2f0a")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 144.78 83.82 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1490c636-98e4-4dfa-9e9f-89f017f58787")
+		(property "Reference" "C31"
+			(at 146.304 82.296 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10uF"
+			(at 143.256 82.296 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603"
+			(at 143.8148 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 144.78 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "966f75cd-02e8-469a-8b22-148cb12056c1")
+		)
+		(pin "2"
+			(uuid "c9075acb-8930-4a0c-b474-515707cb1ccf")
+		)
+		(instances
+			(project "LNA"
+				(path "/a79b485a-b711-4380-8f98-91ad280d0bef/867f2fc5-8a53-4a49-b0bf-8a63d434a79f"
+					(reference "C31")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "lcsc_imported:3313J-1-201E")
@@ -1680,7 +1945,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "3313J-1-502E"
+		(property "Value" "3313J-1-102E"
 			(at 179.07 106.4259 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1785,7 +2050,7 @@
 				)
 			)
 		)
-		(property "Value" "910R M"
+		(property "Value" "910R MELF"
 			(at 97.536 85.852 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1844,8 +2109,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 157.48 105.41 90)
+		(lib_id "Amplifier_Operational:OPA843xD")
+		(at 165.1 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1853,9 +2118,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "4ac39e03-f961-4c6b-8bd7-76094212399b")
-		(property "Reference" "R47"
-			(at 160.782 103.124 90)
+		(fields_autoplaced yes)
+		(uuid "3cb431b2-5349-4fc3-a89e-340ce67725f7")
+		(property "Reference" "U7"
+			(at 176.53 83.7498 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1864,8 +2130,8 @@
 				)
 			)
 		)
-		(property "Value" "5K"
-			(at 155.448 103.124 90)
+		(property "Value" "OPA843xD"
+			(at 176.53 86.2898 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1874,8 +2140,108 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603"
-			(at 157.734 104.394 90)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 162.56 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa843.pdf"
+			(at 168.91 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "800MHz, Wideband, Low Distortion, Medium Gain, Voltage-Feedback Operational Amplifier, SOIC-8"
+			(at 165.1 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "6"
+			(uuid "21b1493f-73aa-46a7-8109-8afbd502e03d")
+		)
+		(pin "2"
+			(uuid "ec086ce0-6316-4d1c-8312-74286177f53d")
+		)
+		(pin "1"
+			(uuid "a5f076f8-5050-4e12-9df9-1c26efa0e528")
+		)
+		(pin "3"
+			(uuid "766e8f06-b4a9-409b-98a3-8cbc50232915")
+		)
+		(pin "4"
+			(uuid "9413f5a6-7a4d-4f91-9166-48b411f56ee5")
+		)
+		(pin "5"
+			(uuid "045e29d3-f400-4518-ac3a-582730f088fb")
+		)
+		(pin "7"
+			(uuid "bad5eb93-06d5-4bfb-9983-ba3f49f22825")
+		)
+		(pin "8"
+			(uuid "fe6470f3-6e29-4890-8d1c-364791fa461c")
+		)
+		(instances
+			(project "LNA"
+				(path "/a79b485a-b711-4380-8f98-91ad280d0bef/867f2fc5-8a53-4a49-b0bf-8a63d434a79f"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 187.96 90.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "48b6d5f8-5c53-4119-a289-5f8dbfe99311")
+		(property "Reference" "TP1_Gain2"
+			(at 188.976 85.598 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 189.23 88.138 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 193.04 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1886,7 +2252,83 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 157.48 105.41 0)
+			(at 193.04 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 187.96 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d8cc33a4-199e-4b94-ad8c-e4df4eff81e5")
+		)
+		(instances
+			(project "LNA"
+				(path "/a79b485a-b711-4380-8f98-91ad280d0bef/867f2fc5-8a53-4a49-b0bf-8a63d434a79f"
+					(reference "TP1_Gain2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 163.83 105.41 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4ac39e03-f961-4c6b-8bd7-76094212399b")
+		(property "Reference" "R47"
+			(at 167.132 103.124 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "9.1K"
+			(at 161.798 103.124 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603"
+			(at 164.084 104.394 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1897,7 +2339,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 157.48 105.41 0)
+			(at 163.83 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1923,8 +2365,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 151.13 83.82 180)
+		(lib_id "lcsc_imported:3313J-1-201E")
+		(at 95.25 73.66 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1932,9 +2374,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "4c83125a-6cac-4cd0-b13b-43cc58a56719")
-		(property "Reference" "R63"
-			(at 155.448 81.534 90)
+		(fields_autoplaced yes)
+		(uuid "4c02a64e-3ff2-4223-b727-ca609710e7c8")
+		(property "Reference" "R46"
+			(at 94.996 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1943,8 +2386,112 @@
 				)
 			)
 		)
-		(property "Value" "10K"
-			(at 153.416 83.312 90)
+		(property "Value" "3313J-1-201E"
+			(at 94.996 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "lcsc_footprints:C124619_RES-ADJ-SMD_3313J-1"
+			(at 95.25 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_BOURNS-3313J-1-201E_C124619.pdf"
+			(at 97.536 73.787 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "3313J-1-201E"
+			(at 95.25 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C124619"
+			(at 95.25 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "BOURNS"
+			(at 95.25 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "4c8617e5-4a21-4154-9fdd-46f6d7f1da02")
+		)
+		(pin "1"
+			(uuid "afb672a4-0b2e-4988-99db-2447cf1990d9")
+		)
+		(pin "3"
+			(uuid "421dad7a-118b-444d-b994-01438c01e9ea")
+		)
+		(instances
+			(project "LNA"
+				(path "/a79b485a-b711-4380-8f98-91ad280d0bef/867f2fc5-8a53-4a49-b0bf-8a63d434a79f"
+					(reference "R46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 85.09 90.17 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5735f33b-5712-43cb-bcd3-b98612c8266a")
+		(property "Reference" "R64"
+			(at 87.376 94.488 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "50R MELF"
+			(at 85.598 92.456 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1954,7 +2501,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_MiniMELF_MMA-0204"
-			(at 150.114 83.566 90)
+			(at 85.344 89.154 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1965,7 +2512,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 83.82 0)
+			(at 85.09 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1976,7 +2523,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 151.13 83.82 0)
+			(at 85.09 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1987,15 +2534,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "31a07c3b-2524-4ea7-9dee-0c98de8fd89f")
+			(uuid "75d35bb7-550c-4440-8080-ad6a74fe25d3")
 		)
 		(pin "2"
-			(uuid "001e4b53-493e-4f15-b4e2-bde5df55963d")
+			(uuid "0e04f7ae-4a0e-4f75-a3e9-3e8e9f9f1e84")
 		)
 		(instances
 			(project "LNA"
 				(path "/a79b485a-b711-4380-8f98-91ad280d0bef/867f2fc5-8a53-4a49-b0bf-8a63d434a79f"
-					(reference "R63")
+					(reference "R64")
 					(unit 1)
 				)
 			)
@@ -2081,8 +2628,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:OPA843xDBV")
-		(at 109.22 92.71 0)
+		(lib_id "Device:R_US")
+		(at 151.13 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2090,9 +2637,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "70c7d46c-d0ca-4f25-bcac-cf6b4e0efd2d")
-		(property "Reference" "U5"
-			(at 110.236 87.122 0)
+		(uuid "6459af5c-f139-43c9-a693-83352f73e377")
+		(property "Reference" "R51"
+			(at 153.416 87.122 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2101,8 +2648,8 @@
 				)
 			)
 		)
-		(property "Value" "OPA843xDBV"
-			(at 114.808 89.154 0)
+		(property "Value" "910R"
+			(at 153.416 81.788 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2111,20 +2658,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 106.68 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa843.pdf"
-			(at 109.22 87.63 0)
+		(property "Footprint" "Resistor_SMD:R_0603"
+			(at 152.146 84.074 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2134,8 +2669,8 @@
 				)
 			)
 		)
-		(property "Description" "800MHz, Wideband, Low Distortion, Medium Gain, Voltage-Feedback Operational Amplifier, SOT-23-5"
-			(at 109.22 92.71 0)
+		(property "Datasheet" ""
+			(at 151.13 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2145,115 +2680,27 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "8deed1d9-b138-470d-abb0-8b62e9385667")
-		)
-		(pin "5"
-			(uuid "149bb406-001d-464c-8150-b8c017418bea")
+		(property "Description" "Resistor, US symbol"
+			(at 151.13 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "1"
-			(uuid "1ce377b8-9787-45f2-9601-de40e679b606")
+			(uuid "eaef90f7-45b9-45f5-9948-d58353566c9a")
 		)
-		(pin "3"
-			(uuid "fbcae3dd-05ed-48d7-b791-6d2c79faa1d4")
-		)
-		(pin "4"
-			(uuid "c4ed5c1a-2397-426b-9249-a614228b2cd7")
+		(pin "2"
+			(uuid "42b9f60c-90f3-4ffe-9533-ed6673681218")
 		)
 		(instances
 			(project "LNA"
 				(path "/a79b485a-b711-4380-8f98-91ad280d0bef/867f2fc5-8a53-4a49-b0bf-8a63d434a79f"
-					(reference "U5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:OPA843xDBV")
-		(at 165.1 90.17 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "745bd409-bdb3-4af0-8a29-1a95090b5984")
-		(property "Reference" "U7"
-			(at 177.8 83.7498 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "OPA843xDBV"
-			(at 177.8 86.2898 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 162.56 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa843.pdf"
-			(at 165.1 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "800MHz, Wideband, Low Distortion, Medium Gain, Voltage-Feedback Operational Amplifier, SOT-23-5"
-			(at 165.1 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "faa9363e-b65d-4ff4-9ead-7a49cebd60db")
-		)
-		(pin "5"
-			(uuid "606ce006-e6d3-4b45-be15-98fbee758931")
-		)
-		(pin "1"
-			(uuid "81db8cda-e37f-470e-8c8c-d60336a29ffe")
-		)
-		(pin "3"
-			(uuid "35790dc2-5202-40b4-a5ab-b54acd4047f9")
-		)
-		(pin "4"
-			(uuid "b2092870-7ded-49ab-8430-2465be59b8c2")
-		)
-		(instances
-			(project "LNA"
-				(path "/a79b485a-b711-4380-8f98-91ad280d0bef/867f2fc5-8a53-4a49-b0bf-8a63d434a79f"
-					(reference "U7")
+					(reference "R51")
 					(unit 1)
 				)
 			)
@@ -2523,7 +2970,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 142.24 92.71 270)
+		(at 85.09 83.82 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2531,9 +2978,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "b7d2b3a2-f097-4a29-8926-d8be2a2269f7")
-		(property "Reference" "R46"
-			(at 139.954 88.392 90)
+		(uuid "b808c8b3-33ee-4e02-8087-bb6d6a0aba74")
+		(property "Reference" "R65"
+			(at 87.376 88.138 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2542,8 +2989,8 @@
 				)
 			)
 		)
-		(property "Value" "1K"
-			(at 141.732 90.424 90)
+		(property "Value" "50R MELF"
+			(at 85.598 86.106 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2553,7 +3000,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_MiniMELF_MMA-0204"
-			(at 141.986 93.726 90)
+			(at 85.344 82.804 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2564,7 +3011,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 92.71 0)
+			(at 85.09 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2575,7 +3022,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 142.24 92.71 0)
+			(at 85.09 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2586,23 +3033,23 @@
 			)
 		)
 		(pin "1"
-			(uuid "f1a92b6b-4352-490e-9fe8-b94c3806be27")
+			(uuid "e712cb90-37da-4600-8c35-15bb482de4c9")
 		)
 		(pin "2"
-			(uuid "27c74e7c-ff12-402d-a740-b801ebe70b43")
+			(uuid "bfafc200-2ddd-46ce-8ff6-0079c753aae4")
 		)
 		(instances
 			(project "LNA"
 				(path "/a79b485a-b711-4380-8f98-91ad280d0bef/867f2fc5-8a53-4a49-b0bf-8a63d434a79f"
-					(reference "R46")
+					(reference "R65")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_US")
-		(at 132.08 92.71 90)
+		(lib_id "Connector:TestPoint")
+		(at 128.27 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2610,29 +3057,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "cab90e59-753f-4e66-90f4-d8dcfee94b6e")
-		(property "Reference" "C41"
-			(at 125.476 89.154 90)
+		(uuid "bf3d8b23-e889-47aa-ba96-3207deef2557")
+		(property "Reference" "TP1_Gain1"
+			(at 129.286 88.138 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "470uF"
-			(at 125.476 91.694 90)
+		(property "Value" "TestPoint"
+			(at 129.54 90.678 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-7343-15_Kemet-W"
-			(at 132.08 92.71 0)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 133.35 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2643,7 +3092,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 92.71 0)
+			(at 133.35 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2653,8 +3102,8 @@
 				)
 			)
 		)
-		(property "Description" "Polarized capacitor, US symbol"
-			(at 132.08 92.71 0)
+		(property "Description" "test point"
+			(at 128.27 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2665,15 +3114,190 @@
 			)
 		)
 		(pin "1"
-			(uuid "b9bcb624-3218-4147-a5f5-ed59135c7991")
-		)
-		(pin "2"
-			(uuid "a81f567d-b2c6-49ed-befd-0707430e032b")
+			(uuid "537e8dd6-2c6b-4e6f-b8c3-ad12273d463e")
 		)
 		(instances
 			(project "LNA"
 				(path "/a79b485a-b711-4380-8f98-91ad280d0bef/867f2fc5-8a53-4a49-b0bf-8a63d434a79f"
-					(reference "C41")
+					(reference "TP1_Gain1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:OPA843xD")
+		(at 109.22 92.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c8998ad7-c540-4f65-87bd-d5d915e4d0be")
+		(property "Reference" "U5"
+			(at 120.65 86.2898 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OPA843xD"
+			(at 120.65 88.8298 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 106.68 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa843.pdf"
+			(at 113.03 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "800MHz, Wideband, Low Distortion, Medium Gain, Voltage-Feedback Operational Amplifier, SOIC-8"
+			(at 109.22 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "6"
+			(uuid "0feb5c4e-11df-4aac-9b66-fd3009fc3061")
+		)
+		(pin "2"
+			(uuid "68f38bb6-a041-4b7d-8d1e-9bdeb36870ce")
+		)
+		(pin "1"
+			(uuid "9af56310-e2ab-465b-ab82-fbca732f7588")
+		)
+		(pin "3"
+			(uuid "6602f202-77c0-4d23-90ad-5b73976cfde3")
+		)
+		(pin "4"
+			(uuid "a63b9121-96dc-4dbf-b9ad-32b8e07aeb13")
+		)
+		(pin "5"
+			(uuid "f383fe97-4acf-4cd5-96f9-993be41d036a")
+		)
+		(pin "7"
+			(uuid "9f1d1530-40f5-41bc-a775-9db40791fa1b")
+		)
+		(pin "8"
+			(uuid "2345941d-b596-4629-9370-5af061693786")
+		)
+		(instances
+			(project "LNA"
+				(path "/a79b485a-b711-4380-8f98-91ad280d0bef/867f2fc5-8a53-4a49-b0bf-8a63d434a79f"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 143.51 92.71 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cf681f1f-d7be-449b-9b52-3922ba1a8f93")
+		(property "Reference" "R50"
+			(at 146.812 90.424 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 141.478 90.424 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603"
+			(at 143.764 91.694 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 143.51 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e087c7fd-a46b-4480-b1cd-93db8e80fe83")
+		)
+		(pin "2"
+			(uuid "08bd4800-fd9d-4e43-8c8c-334c7a8d6dfc")
+		)
+		(instances
+			(project "LNA"
+				(path "/a79b485a-b711-4380-8f98-91ad280d0bef/867f2fc5-8a53-4a49-b0bf-8a63d434a79f"
+					(reference "R50")
 					(unit 1)
 				)
 			)
@@ -2777,7 +3401,7 @@
 				)
 			)
 		)
-		(property "Value" "5pF"
+		(property "Value" "1.5pF"
 			(at 167.132 108.966 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2836,6 +3460,111 @@
 		)
 	)
 	(symbol
+		(lib_id "lcsc_imported:3313J-1-201E")
+		(at 151.13 71.12 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e8936bc1-a6f6-46b8-815d-c64e316ef54d")
+		(property "Reference" "R49"
+			(at 150.876 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3313J-1-201E"
+			(at 150.876 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "lcsc_footprints:C124619_RES-ADJ-SMD_3313J-1"
+			(at 151.13 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_BOURNS-3313J-1-201E_C124619.pdf"
+			(at 153.416 71.247 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "3313J-1-201E"
+			(at 151.13 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C124619"
+			(at 151.13 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "BOURNS"
+			(at 151.13 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0ba44113-8574-468c-a821-acbce36b2a61")
+		)
+		(pin "1"
+			(uuid "07a743c8-c726-4696-b1cf-52ab617df178")
+		)
+		(pin "3"
+			(uuid "2b512b62-b6e1-4f27-b56a-e86c02c889d2")
+		)
+		(instances
+			(project "LNA"
+				(path "/a79b485a-b711-4380-8f98-91ad280d0bef/867f2fc5-8a53-4a49-b0bf-8a63d434a79f"
+					(reference "R49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 101.6 107.95 270)
 		(unit 1)
@@ -2856,7 +3585,7 @@
 				)
 			)
 		)
-		(property "Value" "910R M"
+		(property "Value" "910R MELF"
 			(at 101.092 105.664 90)
 			(show_name no)
 			(do_not_autoplace no)

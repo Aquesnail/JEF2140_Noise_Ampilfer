@@ -665,7 +665,7 @@
         "uuid": "a79b485a-b711-4380-8f98-91ad280d0bef"
       }
     ],
-    "used_designators": "#PWR1-56,C1-58,D1-2,J1-3,K1-2,Q1-13,R1-63,U1-9",
+    "used_designators": "#PWR1-84,BT1-3,C1-60,D1-6,J1-6,K1-3,L1,Q1-13,R1-67,TP1,TP1_Gain2,U1-17",
     "variants": []
   },
   "sheets": [
@@ -682,8 +682,8 @@
       "Composite_AMP1"
     ],
     [
-      "d1b95846-0d07-48f7-aa0e-2e68a8011728",
-      "Input_Net"
+      "ad2e2446-82d0-4e60-a3e6-8d7d98b52d56",
+      "Power"
     ],
     [
       "edd3aa55-1c3e-49ac-a3be-4cbb171dc2e0",
@@ -696,6 +696,14 @@
     [
       "2c4d3c2f-cc04-4695-b0e2-9d0ee5e5cc13",
       "Bias"
+    ],
+    [
+      "fae0216b-c9c9-4053-869a-dccf211ac103",
+      "relay_2-2"
+    ],
+    [
+      "fa720068-2f86-4629-9f18-c3398c131615",
+      "relay_2-3"
     ]
   ],
   "text_variables": {},
