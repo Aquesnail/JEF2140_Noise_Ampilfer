@@ -1787,6 +1787,16 @@
 		)
 		(uuid "3318022f-1a37-4cf1-ae5d-30bfdd778191")
 	)
+	(text "上电顺序中，JFET必须早于后级AMP，否则二级求和电容会产生反压，我觉得可以直接通过控制跟随器电源来进行控制"
+		(exclude_from_sim no)
+		(at 148.082 84.074 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a1d8add9-022c-4254-89d6-1ca5adf58326")
+	)
 	(text "BIAS"
 		(exclude_from_sim no)
 		(at 146.05 25.654 0)
@@ -1796,6 +1806,16 @@
 			)
 		)
 		(uuid "a684c6e2-3b85-4360-a6d0-438e9935df0b")
+	)
+	(text "低阻抗信号可以加TVS，TVS漏电的电流散粒噪声即使叠加到输出阻抗上，也很小"
+		(exclude_from_sim no)
+		(at 65.532 22.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fd81e805-8012-4810-9fff-9f5e81215853")
 	)
 	(junction
 		(at 97.79 38.1)
